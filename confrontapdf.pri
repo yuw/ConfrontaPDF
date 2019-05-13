@@ -40,6 +40,7 @@ TRANSLATIONS += confrontapdf_cz.ts
 TRANSLATIONS += confrontapdf_fr.ts
 TRANSLATIONS += confrontapdf_de.ts
 TRANSLATIONS += confrontapdf_es.ts
+TRANSLATIONS += confrontapdf_ja.ts
 CODECFORTR    = UTF-8
 
 greaterThan(QT_MAJOR_VERSION, 4) {

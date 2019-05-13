@@ -19,7 +19,7 @@
 #include <QTabWidget>
 #include <QTextBrowser>
 
-const QString AboutForm::Version("1.1");
+const QString AboutForm::Version("1.1.1");
 #ifdef COMPARA_IS_CONSOLE
 const QString AboutForm::ProgramName("ConfrontaPDFc");
 #else
@@ -33,12 +33,13 @@ AboutForm::AboutForm(QWidget *parent) : QDialog(parent)
     aboutBrowser->setOpenExternalLinks(true);
     aboutBrowser->setHtml(tr(
     "<table border=0>"
-    "<tr><td width=90%><b>%1</a> %2</b> by Luca Bellonda</td><td rowspan=5><img align=right src=\":/icon.png\"></td></tr>"
+    "<tr><td width=90%><b>%1</a> %2</b> by Yuwsuke Kieda</td><td rowspan=5><img align=right src=\":/icon.png\"></td></tr>"
     "<tr><td>&lt;lbellonda@gmail.com&gt;.</td></tr>"
-    "<tr><td>Site: <a href='https://github.com/lbellonda/ConfrontaPDF'>github.com/lbellonda/ConfrontaPDF</a></td></tr>"
-    "<tr><td>Report issues at: <a href='https://github.com/lbellonda/ConfrontaPDF/issues'>github.com/lbellonda/ConfrontaPDF/issues</a></td></tr>"
+    "<tr><td>Site: <a href='https://github.com/yuw/ConfrontaPDF'>github.com/yuw/ConfrontaPDF</a></td></tr>"
+    "<tr><td>Report issues at: <a href='https://github.com/yuw/ConfrontaPDF/issues'>github.com/yuw/ConfrontaPDF/issues</a></td></tr>"
 
     "<tr><td>Based on DiffPDF by by Mark Summerfield.</td></tr>"
+    "<tr><td>And, based on ConfrontaPDF by by Luca Bellonda.</td></tr>"
 
     "<tr><td colspan=2>Built with Qt %3 and Poppler %4.</td></tr>"
     "</table><hr>"
@@ -46,6 +47,7 @@ AboutForm::AboutForm(QWidget *parent) : QDialog(parent)
     "each page in two PDF files and supports batch operations."
     "<hr>"
     "<p>The open source DiffPDF was created and maintained by Mark Summerfield 2008-2013. This is a fork of that project by Luca Bellonda, begun in 2015."
+    "<p>This is a fork of that project by Yuwsuke Kieda, begun in 2019."
     "<br/>The source for the last release of Mark's open source version is available from: <a href='http://www.qtrac.eu/diffpdf-foss.html'>http://www.qtrac.eu/diffpdf-foss.html</a>."
     "<br/>Mark's commercial versions are available from: <a href='http://www.qtrac.eu/diffpdf.html'>http://www.qtrac.eu/diffpdf.html</a>"
     "<br/><br/>Consider also Mark books:"
