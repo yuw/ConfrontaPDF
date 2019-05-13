@@ -45,6 +45,7 @@ CODECFORTR    = UTF-8
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT       += printsupport widgets core
     LIBS	     += -lpoppler-qt5
+    LIBS	     += -L/usr/local/lib
     DEFINES += USE_QT5
     exists($(HOME)/opt/poppler024/) {
         message(Using locally built Poppler library)
