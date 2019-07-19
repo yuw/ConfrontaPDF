@@ -780,16 +780,22 @@ void MainWindow::logTopLevelChanged(bool floating)
 void MainWindow::previousPages()
 {
     int i = viewDiffComboBox->currentIndex();
-    if (i > 0)
+    if (i > 0) {
         viewDiffComboBox->setCurrentIndex(i - 1);
+        page1Label->repaint();
+        previousButton->repaint();
+    }
 }
 
 
 void MainWindow::nextPages()
 {
     int i = viewDiffComboBox->currentIndex();
-    if (i + 1 < viewDiffComboBox->count())
+    if (i + 1 < viewDiffComboBox->count()) {
         viewDiffComboBox->setCurrentIndex(i + 1);
+        page1Label->repaint();
+        nextButton->repaint();
+    }
 }
 
 
