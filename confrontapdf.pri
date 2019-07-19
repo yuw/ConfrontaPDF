@@ -155,7 +155,7 @@ win32:RC_FILE = win.rc
 #}
 
 
-QMAKE_CXXFLAGS +=-Werror
+#QMAKE_CXXFLAGS +=-Werror
 QMAKE_CXXFLAGS +=-Wall
 
 
