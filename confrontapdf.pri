@@ -71,6 +71,9 @@ greaterThan(QT_MAJOR_VERSION, 4) {
                     message(Using default 5)
                     INCLUDEPATH += /usr/local/include/poppler/cpp
                     INCLUDEPATH += /usr/local/include/poppler/qt5
+                    INCLUDEPATH += /opt/homebrew/opt/poppler-qt5/include/poppler/cpp
+                    INCLUDEPATH += /opt/homebrew/opt/poppler-qt5/include/poppler/qt5
+                    INCLUDEPATH += /opt/homebrew/Cellar/qt@5/5.15.17/lib/QtCore.framework/Versions/5/Headers/QtCore
                 }
             }
         }
@@ -155,7 +158,4 @@ win32:RC_FILE = win.rc
 
 QMAKE_CXXFLAGS +=-Werror
 QMAKE_CXXFLAGS +=-Wall
-
-
-
-
+QMAKE_CXXFLAGS += -Wno-deprecated-declarations

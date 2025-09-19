@@ -17,3 +17,8 @@ UI_SOURCES_DIR = buildui/a/src
 RCC_DIR = build/a/rcc
 
 
+# ライブラリパスを追加
+LIBS += -L/opt/homebrew/opt/poppler-qt5/lib -lpoppler-qt5
+
+# インクルードパスも追加
+INCLUDEPATH += /opt/homebrew/opt/poppler-qt5/include
