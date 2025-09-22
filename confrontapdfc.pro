@@ -22,3 +22,12 @@ RCC_DIR = build/c/rcc
 CONFIG   += console
 # this is questionable for command line app on macos
 CONFIG   -= app_bundle
+
+# AGLを明示的に除外
+# macOSの最小バージョンを上げる
+# 実際のバージョンに合わせる # sw_vers -productVersion
+macx {
+    QMAKE_MACOSX_DEPLOYMENT_TARGET = 26.0# macOSの最小バージョンを上げる
+    QMAKE_LIBS_OPENGL = -framework OpenGL# AGLを明示的に除外
+    LIBS -= -framework AGL
+}
